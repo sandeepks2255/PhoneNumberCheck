@@ -20,32 +20,32 @@ class TestMethodMissing < Minitest::Test
   end
 
   def test_call_898989898989
-    assert_equal "898989898989",@method1
+    assert_equal :call_898989898989,@method1
   end
 
 
 
   def test_call_04844011845
-    assert_equal "0484401184",@method2
+    assert_equal :call_0484401184,@method2
   end
 
 
 
   def test_call_8547810845
-    assert_equal "9547810845",@method3
+    assert_equal :call_9547810845,@method3
   end
 
 
 
   def test_call_12321
-    assert_equal "12321",@method4
+    assert_equal :call_12321,@method4
 
   end
 
   def test_call_8547810845_call  
-    assert_equal "8547810845", @method5 
+    assert_equal :call_8547810845, @method5 
   end 
   def test_call_call_8547810845 
-     assert_equal "8547810845" , @method6  
+     assert_equal :call_8547810845, @method6  
   end
 end
