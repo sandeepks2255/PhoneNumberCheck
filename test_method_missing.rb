@@ -11,7 +11,7 @@ class TestMethodMissing < Minitest::Test
   def setup
     @calling_object = Call.new
     @method1 = @calling_object.call_8989898989
-    @method2 = @calling_object.call_0484401184
+    @method2 = @calling_object.call_04844011845
     @method3 = @calling_object.call_9547810845
     @method4 = @calling_object.call_12321
     @method5 = @calling_object.call_8547810845_call
@@ -26,12 +26,12 @@ class TestMethodMissing < Minitest::Test
 
 
   def test_call_04844011845
-    assert_equal :call_0484401184,@method2
+    assert_equal :call_04844011845,@method2
   end
 
 
 
-  def test_call_8547810845
+  def test_call_9547810845   
     assert_equal :call_9547810845,@method3
   end
 

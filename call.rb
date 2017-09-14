@@ -3,7 +3,7 @@ class Call
   def method_missing(method, *args, &block)
     @number = method[/\d+/].to_s
     @number_size = "#{@number}"
-    if (@number_size.size == 10 ) && ((@number.start_with?'8') || (@number.start_with?'9') || (@number.start_with?'0'))
+    if ((@number_size.size == 10 ) && ((@number.start_with?'8') || (@number.start_with?'9') ))||(@number_size.size == 11 && (@number.start_with?'0'))
       # puts "valid phone number"
       return method
     end
